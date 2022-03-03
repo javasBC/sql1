@@ -16,12 +16,12 @@ CREATE TABLE Teachers(
 	PRIMARY	KEY (id)
 );
 
-
+---------------------
 INSERT INTO Teachers 
 VALUES (1,"kobi","java"),
 (2,"alexsey","aws"),
 (3,"itzhak","sql")
-
+--------------------------------
 
 INSERT INTO Students 
 VALUES (100,"hodi",50,1),
