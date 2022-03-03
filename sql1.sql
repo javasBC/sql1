@@ -35,3 +35,42 @@ VALUES (100,"hodi",50,1),
 (108,"liad",100,1),
 (109,"shai",8,NULL)
 
+
+
+--------------------------------
+CREATE TABLE Teachers (
+	id INTEGER  PRIMARY KEY AUTOINCREMENT,
+	name TEXT ,
+	car TEXT ,
+	parking_id INTEGER,
+	FOREIGN KEY (parking_id) REFERENCES Parking(id)
+);
+
+--------------------------------------
+CREATE TABLE Parking (
+	id INTEGER  PRIMARY KEY AUTOINCREMENT,
+	size INTEGER,
+	teacher_id INTEGER,
+	FOREIGN KEY (teacher_id) REFERENCES Teachers(id)
+);
+---------------------------------------
+
+
+INSERT INTO Parking (size)
+VALUES(2),(2),(2)
+
+
+--------------------------------------
+
+
+INSERT INTO Teachers (name,car, parking_id)
+values 
+("spiderman","net mobile",2),
+("wonder woman","fiat 500",1),
+("jakie chan ","toyota",3)
+
+--------------------------------------
+SELECT * FROM Teachers
+join Parking
+ON parking_id=Parking.id
+
