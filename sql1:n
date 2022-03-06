@@ -39,3 +39,7 @@ VALUES
 ("aws",20),
 ("java",30)
 
+
+update Students
+set	class_Id =2
+where id =6
