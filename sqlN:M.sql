@@ -76,3 +76,8 @@ values
 (5,5),
 ((SELECT id from Actors where name = "gal gadot"),
 (SELECT id from movies where title="DOG"))
+
+
+SELECT name,Movies.title from Actors
+INNER  JOIN ActInMovRel ON ActInMovRel.actorId=Actors.id
+INNER JOIN Movies On ActInMovRel.movieId= Movies.id
