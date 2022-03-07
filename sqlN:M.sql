@@ -40,3 +40,17 @@ VALUES
 ("chris hemsworth","11-8-1983","Thor","sydney","YES"),
 ("chris Tucker","31-08-1971","Rush Hour","georgia","no"),
 ("gal gadot","30-04-1985","Red Notice","rosh ha'yen","YES")
+
+
+
+
+
+INSERT INTO Movies 
+(title , len,year,cost,genre)
+VALUES 
+("Home Alone", 120, 1991 , 4000000,"comedy"),
+("forrest gump", 93, 2001 , 8000000,"drama"),
+("the batman ", 120, 2022 , 21000000,"ACTION"),
+("DOG", 120, 1991 , 16000000,"comedy"),
+("fast and furious 9", 180, 2020 , 16000000000,"Horror"),
+("Love story", 1120, 1970,310,"Romance")
