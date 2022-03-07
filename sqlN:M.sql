@@ -54,3 +54,25 @@ VALUES
 ("DOG", 120, 1991 , 16000000,"comedy"),
 ("fast and furious 9", 180, 2020 , 16000000000,"Horror"),
 ("Love story", 1120, 1970,310,"Romance")
+
+
+
+
+INSERT INTO ActInMovRel (actorId,movieId)
+values
+(1,1),
+(1,2),
+(1,4),
+(1,6),
+(2,1),
+(2,3),
+(2,6),
+(3,2),
+(3,3),
+(3,4),
+(4,1),
+(4,5),
+(4,6),
+(5,5),
+((SELECT id from Actors where name = "gal gadot"),
+(SELECT id from movies where title="DOG"))
