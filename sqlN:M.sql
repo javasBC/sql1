@@ -81,3 +81,15 @@ values
 SELECT name,Movies.title from Actors
 INNER  JOIN ActInMovRel ON ActInMovRel.actorId=Actors.id
 INNER JOIN Movies On ActInMovRel.movieId= Movies.id
+
+
+
+
+SELECT name  from Actors
+where id =(
+SELECT max(actorId) from ActInMovRel where movieId = (
+SELECT id from Movies where title = "fast and furious 9"))
+or 
+id = (
+SELECT min(actorId) from ActInMovRel where movieId = (
+SELECT id from Movies where title = "fast and furious 9"))
